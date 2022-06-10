@@ -1,10 +1,11 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@cndllabs/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { WrappedTokenInfo } from 'state/lists/wrappedTokenInfo'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import CandleLogo from '../../assets/svg/candle_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 
 type Network = 'ethereum' | 'arbitrum' | 'optimism'
@@ -27,6 +28,8 @@ function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MAINNET):
     case SupportedChainId.POLYGON_MUMBAI:
     case SupportedChainId.POLYGON:
       return MaticLogo
+    case SupportedChainId.CANDLE:
+      return CandleLogo
     default:
       return EthereumLogo
   }
