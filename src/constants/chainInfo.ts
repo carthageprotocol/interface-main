@@ -1,8 +1,8 @@
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import arbitrumLogoUrl from 'assets/svg/arbitrum_logo.svg'
+import candleCNDLLogo from 'assets/svg/candle-CNDL-logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
-import candleCNDLLogo from 'assets/svg/candle-CNDL-logo.svg'
 import ms from 'ms.macro'
 
 import { SupportedChainId, SupportedL1ChainId, SupportedL2ChainId } from './chains'
@@ -43,8 +43,7 @@ export interface L2ChainInfo extends BaseChainInfo {
 
 export type ChainInfoMap = { readonly [chainId: number]: L1ChainInfo | L2ChainInfo } & {
   readonly [chainId in SupportedL2ChainId]: L2ChainInfo
-} &
-  { readonly [chainId in SupportedL1ChainId]: L1ChainInfo }
+} & { readonly [chainId in SupportedL1ChainId]: L1ChainInfo }
 
 export const CHAIN_INFO: ChainInfoMap = {
   [SupportedChainId.MAINNET]: {
