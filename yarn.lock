@@ -1292,6 +1292,18 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@cndllabs/sdk-core@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@cndllabs/sdk-core/-/sdk-core-3.0.1.tgz#dd00aa466882c8eb7f496d93e510b0e52ea781ec"
+  integrity sha512-HX6lEy40+J5gbAwHV8ka7grBgWuYkTcvbXqu0W50+mOkzYqci9SeDmx3IupEDJuPskUN/4DioHlL3CBbdWRkPA==
+  dependencies:
+    "@ethersproject/address" "^5.0.2"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.4"
+    tiny-invariant "^1.1.0"
+    toformat "^2.0.0"
+
 "@cndllabs/v3-sdk@^3.8.2":
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/@cndllabs/v3-sdk/-/v3-sdk-3.8.2.tgz#ae4d7afa957b035922fb71e8d347d6cc34f85313"
