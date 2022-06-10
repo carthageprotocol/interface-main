@@ -34,6 +34,7 @@
     ]
   },
   "dependencies": {
+    "@cndllabs/v3-sdk": "^3.8.2",
     "@ethersproject/experimental": "^5.4.0",
     "@fontsource/ibm-plex-mono": "^4.5.1",
     "@fontsource/inter": "^4.5.1",
