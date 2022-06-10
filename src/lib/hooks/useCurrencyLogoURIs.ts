@@ -37,7 +37,12 @@ function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MAINNET):
 
 function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.MAINNET): string | void {
   const networkName = chainIdToNetworkName(chainId)
-  const networksWithUrls = [SupportedChainId.ARBITRUM_ONE, SupportedChainId.CANDLE, SupportedChainId.MAINNET, SupportedChainId.OPTIMISM]
+  const networksWithUrls = [
+    SupportedChainId.ARBITRUM_ONE,
+    SupportedChainId.CANDLE,
+    SupportedChainId.MAINNET,
+    SupportedChainId.OPTIMISM,
+  ]
   if (networksWithUrls.includes(chainId)) {
     return `https://raw.githubusercontent.com/carthageprotocol/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   }
